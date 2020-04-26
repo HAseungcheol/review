@@ -21,6 +21,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="165dp"
                 app:srcCompat="@drawable/rice" />
+
+            <ImageView
+                android:id="@+id/tuna"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                app:srcCompat="@drawable/main_cham" />
+
+            <ImageView
+                android:id="@+id/egg"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                app:srcCompat="@drawable/main_o" />
+
+            <ImageView
+                android:id="@+id/pork"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                app:srcCompat="@drawable/main_gogi" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
