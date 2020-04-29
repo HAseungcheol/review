@@ -75,7 +75,5 @@ public class MemoDAO {
         db.delete(tableName, "_id=?", new String[]{id}) ; //
         dbhelper.close();
     }
-
-
     //단건조회
 }
