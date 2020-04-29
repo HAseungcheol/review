@@ -1,8 +1,10 @@
 package com.example.project;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -16,6 +18,8 @@ import java.util.HashMap;
 public class WasabiActivity extends AppCompatActivity {
     SQLiteDatabase sqliteDB;
     DBHelper dbHelper;
+    ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +36,7 @@ public class WasabiActivity extends AppCompatActivity {
             }
         });
     }
+
     private void load_values() {
         //MVC 중에서 Model
         ArrayList<HashMap<String, String>> list = new MemoDAO().selectAll(getApplicationContext());
@@ -44,12 +49,18 @@ public class WasabiActivity extends AppCompatActivity {
                         new String[]{"title", "time"},
                         new int[]{android.R.id.text1, android.R.id.text2});
         //ListView에 adapter 연결
-        ListView listView = findViewById(R.id.reviewList);
+        listView = findViewById(R.id.reviewList);
         listView.setAdapter(simpleAdapter);
     }
+
     private SQLiteDatabase init_database() {
         dbHelper = new DBHelper(getApplicationContext());   //DB table 생성
         SQLiteDatabase db = dbHelper.getWritableDatabase(); //DB
         return db;
+    }
+
+    //삭제
+    public static void delete_value() {
+
     }
 }
