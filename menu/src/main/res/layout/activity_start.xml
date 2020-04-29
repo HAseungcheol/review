@@ -10,11 +10,11 @@
     tools:context=".StartActivity">
 
     <Button
-        android:id="@+id/btnstart"
+        android:id="@+id/btnStart"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
+        android:layout_height="70dp"
         android:background="#FFF381"
-        android:text="Let's Start \n Cook!"
+        android:text="Let's Start\nCook!"
         android:textColor="#988518"
         android:textIsSelectable="false"
         android:textSize="24sp"

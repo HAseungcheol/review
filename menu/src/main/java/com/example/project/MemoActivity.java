@@ -19,7 +19,7 @@ public class MemoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 save_values();
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), WasabiActivity.class);
                 startActivity(intent);
                 finish();
             }
