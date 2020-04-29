@@ -15,6 +15,12 @@
             android:orientation="vertical" >
 
             <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                app:srcCompat="@drawable/eeg0PNG" />
+
+            <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="396dp"
                 android:layout_height="wrap_content"
@@ -25,6 +31,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="1.오믈렛 속에 넣을 치즈는 넣기 좋게 나눠주세요.	" />
 
             <ImageView
@@ -37,6 +44,7 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="2.계란 3개를 깐 후 소금을 넣어 간을 해줍니다.\n계란과 소금이 잘 섞이도록 저어주세요. " />
 
             <ImageView
@@ -49,6 +57,7 @@
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="3.더 고운 오믈렛을 위해 계란물을 체에 한 번 걸러줍니다." />
 
             <ImageView
@@ -61,6 +70,7 @@
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="4.후라이팬에 기름을 넉넉하게 두르고 키친타올로 후라이팬 전체에 닦아줍니다." />
 
             <ImageView
@@ -73,6 +83,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="5.불은 약불로 맞추고, 계란물을 후라이팬에 붓습니다. 젓가락으로 휘휘 저으며 고운 스크램블을 만들어 주세요. \n 사진에 나오는 정도가 되면 그만 저으셔도 됩니다." />
 
             <ImageView
@@ -85,6 +96,7 @@
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="6.스크램블 위에 오믈렛 속이 될 치즈를 넣어 줍니다. \n 후라이팬을 확 기울인 상태에서 스크램블 끝 부분을 안으로 접어줍니다." />
 
             <ImageView
@@ -97,6 +109,7 @@
                 android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="7.반을 안으로 접은 후 후라이팬과 젓가락을 이용해 전체적으로 앞으로 밀어줍니다. \n 그리고 손목 스냅과 젓가락을 이용해 뒤집어 주세요. " />
 
             <ImageView
@@ -109,6 +122,7 @@
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="8.뒤집은 후 후라이팬의 둥근 벽면을 이용해 모양을 잡아줍니다. \n 반대쪽도 마찬가지로 모양을 잡아줍니다." />
         </LinearLayout>
     </ScrollView>
