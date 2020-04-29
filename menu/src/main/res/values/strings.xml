@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">이건해야 먹고살지</string>
+    <string name="title">제목</string>
 </resources>
