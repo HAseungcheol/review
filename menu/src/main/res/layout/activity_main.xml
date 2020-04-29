@@ -59,11 +59,8 @@
                 android:layout_height="165dp"
                 app:srcCompat="@drawable/main_gogi" />
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/vpPager"
-                android:layout_width="match_parent"
-                android:layout_height="69dp" />
         </LinearLayout>
+
     </ScrollView>
 
 </LinearLayout>
