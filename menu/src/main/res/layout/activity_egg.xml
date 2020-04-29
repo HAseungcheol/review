@@ -18,7 +18,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="255dp"
-                app:srcCompat="@drawable/eeg0PNG" />
+                app:srcCompat="@drawable/eeg0" />
 
             <ImageView
                 android:id="@+id/imageView4"
