@@ -1,13 +1,10 @@
 package com.example.project;
 
-import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
@@ -18,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class WasabiActivity extends AppCompatActivity {
     SQLiteDatabase sqliteDB;
@@ -35,18 +33,32 @@ public class WasabiActivity extends AppCompatActivity {
         newmemo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WasabiActivity.this, MemoActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MemoActivity.class);
                 startActivity(intent);
             }
         });
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-//                builder.setTitle();
-//                builder.setMessage(vo.getContent());
-//                AlertDialog alertDialog = builder.create();
-//                alertDialog.show();
+                //변수에다가 AdapterView의 리스트 목록(Item)의 포지션을 담는다.
+                //중요한 것은 ListView에 데이터가 있어야 불러 올 수 있다!
+                Map<String, String> item = (Map) parent.getItemAtPosition(position);
+
+                //String 타입의 변수에다가 Item의 get()를 활용하여 title컬럼, content컬럼의 값을 담는다.
+                String title = item.get("title");
+                String content = item.get("content");
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                builder.setTitle(title);
+                builder.setMessage(content);
+                builder.setPositiveButton("확인", new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+
+                    }
+                });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
             }
         });
     }
@@ -71,10 +83,5 @@ public class WasabiActivity extends AppCompatActivity {
         dbHelper = new DBHelper(getApplicationContext());   //DB table 생성
         SQLiteDatabase db = dbHelper.getWritableDatabase(); //DB
         return db;
-    }
-
-    //삭제
-    public static void delete_value() {
-
     }
 }

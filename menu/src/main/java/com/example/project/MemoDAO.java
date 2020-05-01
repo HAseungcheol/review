@@ -20,7 +20,7 @@ public class MemoDAO {
 
         dbhelper = new DBHelper(context);
         SQLiteDatabase db=dbhelper.getReadableDatabase();
-        String sql = "select _id, title, content, time from memo order by _id desc ";
+        String sql = "SELECT _id, title, content, time FROM memo ORDER BY _id DESC ";
         Cursor cursor=db.rawQuery(sql, null);
         while (cursor.moveToNext()){
             HashMap<String, String> map = new HashMap<String, String>();
