@@ -9,7 +9,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="637dp">
 
         <LinearLayout
 
@@ -32,10 +32,10 @@
                 android:layout_height="142dp"
                 android:gravity="center"
                 app:srcCompat="@drawable/rice" />
-                android:id="@+id/wasabi"
-                android:layout_width="match_parent"
-                android:layout_height="165dp"
-                app:srcCompat="@drawable/rice" />
+            android:id="@+id/wasabi"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            app:srcCompat="@drawable/rice" />
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:gravity="center"
             android:layout_width="match_parent"
@@ -78,5 +78,11 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="끝으로..." />
 
 </LinearLayout>
