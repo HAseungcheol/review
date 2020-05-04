@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MemoActivity extends AppCompatActivity {
     Button save;
     Button delete;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,7 @@ public class MemoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
                 builder.setTitle("저장하실 건가요?").setMessage("아직 실력이 부족해서 삭제 기능을 못 구현하였습니다.. ㅠ");
-                builder.setPositiveButton("등록", new DialogInterface.OnClickListener(){
+                builder.setPositiveButton("등록", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         Toast.makeText(getApplicationContext(), "등록 완료!", Toast.LENGTH_SHORT).show();
@@ -35,7 +36,7 @@ public class MemoActivity extends AppCompatActivity {
                         finish();
                     }
                 });
-                builder.setNegativeButton("취소", new DialogInterface.OnClickListener(){
+                builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         Toast.makeText(getApplicationContext(), "한 번 더 확인해 주셔서 감사합니다!", Toast.LENGTH_SHORT).show();
@@ -46,7 +47,7 @@ public class MemoActivity extends AppCompatActivity {
             }
         });
         delete = findViewById(R.id.btnDelete);
-        delete.setOnClickListener(new View.OnClickListener(){
+        delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "미구현 ㅠㅠ....", Toast.LENGTH_SHORT).show();
@@ -65,6 +66,7 @@ public class MemoActivity extends AppCompatActivity {
         vo.setContent(content);
         new MemoDAO().insert(getApplicationContext(), vo);
     }
+
     private void delete_value() {
 
     }

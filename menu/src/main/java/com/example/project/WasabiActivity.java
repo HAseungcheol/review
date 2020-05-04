@@ -29,7 +29,7 @@ public class WasabiActivity extends AppCompatActivity {
                                 "\n" +
                                 "양념\n" +
                                 "소금(약간), 설탕(0.5), 식초(1.5), 와사비(0.5)");
-                builder.setPositiveButton("확인", new DialogInterface.OnClickListener(){
+                builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
 

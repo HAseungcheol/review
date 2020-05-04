@@ -10,6 +10,7 @@ import androidx.viewpager.widget.PagerAdapter;
 public class CustomAdapter extends PagerAdapter {
 
     LayoutInflater inflater;
+
     public CustomAdapter(LayoutInflater inflater) {
         // TODO Auto-generated constructor stub
 

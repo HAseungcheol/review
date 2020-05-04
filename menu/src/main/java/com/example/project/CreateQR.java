@@ -14,6 +14,7 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 public class CreateQR extends AppCompatActivity {
     private ImageView iv;
     private String text;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,11 +24,12 @@ public class CreateQR extends AppCompatActivity {
         text = "https://www.10000recipe.com/";
 
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
-        try{
-            BitMatrix bitMatrix = multiFormatWriter.encode(text, BarcodeFormat.QR_CODE,180,180);
+        try {
+            BitMatrix bitMatrix = multiFormatWriter.encode(text, BarcodeFormat.QR_CODE, 180, 180);
             BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
             Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
             iv.setImageBitmap(bitmap);
-        }catch (Exception e){}
+        } catch (Exception e) {
+        }
     }
 }

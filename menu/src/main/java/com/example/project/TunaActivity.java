@@ -28,7 +28,7 @@ public class TunaActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
                 builder.setTitle("★재료 준비★")
                         .setMessage(" 참치 1/2캔, 달걀 1개, 양파 1/2개, 깻잎 2장 김가루, 마요네즈 2~3T, 후추톡톡\n\n 장 (데리야끼소스) : 간장 3T, 맛술 1T, 청주1T 설탕 1T (또는 설탕 0.5T, 물엿 0.5T)");
-                builder.setPositiveButton("확인", new DialogInterface.OnClickListener(){
+                builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
 

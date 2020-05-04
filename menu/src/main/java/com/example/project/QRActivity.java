@@ -17,12 +17,11 @@ public class QRActivity extends AppCompatActivity {
 
         createQRBtn = findViewById(R.id.createQR);
 
-        createQRBtn.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        createQRBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent intent = new Intent(QRActivity.this, CreateQR.class);
                 startActivity(intent);
             }
         });
-
     }
 }

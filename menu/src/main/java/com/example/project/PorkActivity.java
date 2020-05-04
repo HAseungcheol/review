@@ -31,7 +31,7 @@ public class PorkActivity extends AppCompatActivity {
                                 "\n" +
                                 " 볶음양념 재료>\n" +
                                 "두반장 2TS, 고추기름 1TS, 멸치육수 1TS, 간장 1ts, 청주 1ts, 참기름 0.5ts");
-                builder.setPositiveButton("확인", new DialogInterface.OnClickListener(){
+                builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
 

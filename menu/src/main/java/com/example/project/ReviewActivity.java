@@ -46,7 +46,7 @@ public class ReviewActivity extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
                 builder.setTitle("메인으로 돌아갑니다").setMessage("Move or Stay?");
-                builder.setPositiveButton("확인", new DialogInterface.OnClickListener(){
+                builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         Toast.makeText(getApplicationContext(), "메인으로 슝!", Toast.LENGTH_SHORT).show();
@@ -55,7 +55,7 @@ public class ReviewActivity extends AppCompatActivity {
                         finish();
                     }
                 });
-                builder.setNegativeButton("취소", new DialogInterface.OnClickListener(){
+                builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                     }
@@ -77,8 +77,8 @@ public class ReviewActivity extends AppCompatActivity {
                 String content = item.get("content");
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
-                builder.setTitle(title+"번 게시물");
-                builder.setMessage("본문>\n"+content);
+                builder.setTitle(title + "번 게시물");
+                builder.setMessage("본문>\n" + content);
                 builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {

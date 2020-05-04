@@ -22,39 +22,39 @@ public class MainActivity extends AppCompatActivity {
         //각 레이아웃에 창 전환 Event
         ImageView wasabi = findViewById(R.id.wasabi);
         wasabi.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this, WasabiActivity.class);
-        startActivity(intent);
-        }
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, WasabiActivity.class);
+                startActivity(intent);
+            }
         });
         ImageView tuna = findViewById(R.id.tuna);
         tuna.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this, TunaActivity.class);
-        startActivity(intent);
-        }
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TunaActivity.class);
+                startActivity(intent);
+            }
         });
         ImageView egg = findViewById(R.id.egg);
         egg.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this, EggActivity.class);
-        startActivity(intent);
-        }
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, EggActivity.class);
+                startActivity(intent);
+            }
         });
         ImageView pork = findViewById(R.id.pork);
         pork.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this, PorkActivity.class);
-        startActivity(intent);
-        }
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PorkActivity.class);
+                startActivity(intent);
+            }
         });
         //평가 레이아웃으로 창 전환
         Button review = findViewById(R.id.intentReview);
-        review.setOnClickListener(new View.OnClickListener(){
+        review.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ReviewActivity.class);

@@ -15,14 +15,14 @@ public class MemoDAO {
     String tableName = "memo";
 
     //목록조회
-    public ArrayList<HashMap<String, String>> selectAll(Context context){
+    public ArrayList<HashMap<String, String>> selectAll(Context context) {
         ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
 
         dbhelper = new DBHelper(context);
-        SQLiteDatabase db=dbhelper.getReadableDatabase();
+        SQLiteDatabase db = dbhelper.getReadableDatabase();
         String sql = "SELECT _id, title, content, time FROM memo ORDER BY _id DESC ";
-        Cursor cursor=db.rawQuery(sql, null);
-        while (cursor.moveToNext()){
+        Cursor cursor = db.rawQuery(sql, null);
+        while (cursor.moveToNext()) {
             HashMap<String, String> map = new HashMap<String, String>();
             map.put("_id", cursor.getString(0));
             map.put("title", cursor.getString(1));
@@ -34,8 +34,9 @@ public class MemoDAO {
         System.out.println(list);
         return list;
     }
+
     //등록
-    public void insert(Context context, MemoVO memo){
+    public void insert(Context context, MemoVO memo) {
         dbhelper = new DBHelper(context);
         SQLiteDatabase db = dbhelper.getWritableDatabase();
 
@@ -56,7 +57,7 @@ public class MemoDAO {
     }
 
     //수정
-    public void update(Context context, MemoVO memo){
+    public void update(Context context, MemoVO memo) {
         dbhelper = new DBHelper(context);
         SQLiteDatabase db = dbhelper.getWritableDatabase();   //데이터베이스 연결
 
@@ -64,15 +65,15 @@ public class MemoDAO {
         contentValues.put("title", memo.getTitle());
         contentValues.put("content", memo.getContent());
         String id = Integer.toString(memo.get_id());
-        db.update(tableName, contentValues, "_id=?", new String[]{id}) ; //Update memo set where id = ?; 와 똑같다.
+        db.update(tableName, contentValues, "_id=?", new String[]{id}); //Update memo set where id = ?; 와 똑같다.
         dbhelper.close();
     }
 
     //삭제
-    public void delete(Context context, String id){
+    public void delete(Context context, String id) {
         dbhelper = new DBHelper(context);
         SQLiteDatabase db = dbhelper.getWritableDatabase();
-        db.delete(tableName, "_id=?", new String[]{id}) ; //
+        db.delete(tableName, "_id=?", new String[]{id}); //
         dbhelper.close();
     }
     //단건조회

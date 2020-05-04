@@ -25,7 +25,7 @@ public class EggActivity extends AppCompatActivity {
                                 "마요네즈 0.5, 우유 3, 소금/후추\n" +
                                 "\n" +
                                 "1인분 기준 (우유 1 = 우유 1큰술 = 15ml)");
-                builder.setPositiveButton("확인", new DialogInterface.OnClickListener(){
+                builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
 
