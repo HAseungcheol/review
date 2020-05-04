@@ -59,6 +59,13 @@
                 android:layout_height="165dp"
                 app:srcCompat="@drawable/main_gogi" />
 
+            <Button
+                android:id="@+id/intentReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="평가"
+                android:textSize="21sp" />
+
         </LinearLayout>
 
     </ScrollView>

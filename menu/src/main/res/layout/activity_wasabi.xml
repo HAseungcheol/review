@@ -13,6 +13,28 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:text="3분도 안걸리는 와사비비빔밥!"
+                android:textColor="#F44336"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/material"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="재료 목록"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="300dp"
@@ -85,8 +107,9 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="fill"
-                android:text="※평가를 남겨보자"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="※별점 매기기"
                 android:textColor="#FF80AB"
                 android:textSize="26sp" />
 
@@ -101,33 +124,6 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/btnNewMemo"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="fill"
-                android:text="등록"
-                android:textColorHighlight="#EA80FC"
-                android:textColorLink="#FFFFFF"
-                android:textSize="18sp" />
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical" >
-
-                    <ListView
-                        android:id="@+id/reviewList"
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp" />
-                </LinearLayout>
-            </ScrollView>
 
         </LinearLayout>
     </ScrollView>

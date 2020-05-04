@@ -15,75 +15,89 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textView26"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="70dp"
                 android:gravity="center"
                 android:text="1시간이면 완성되는 돼지고기 야채볶음!"
+                android:textColor="#F44336"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/material4"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="재료 목록"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/textView27"
                 android:layout_width="match_parent"
-                android:layout_height="163dp"
-                android:gravity="center"
-                android:text="[메인재료] 돼지고기(안심) 210g 양파 1/4개 빨강·노랑 파프리카 1/2개씩 브로콜리 150g 마늘 3개  [돼지고기(안심)밑간 재료] 진간장 1TS 청주 1TS 생강가루 1/2ts 참기름 1/2ts 후춧가루 조금  [볶음양념 재료]  두반장 1+1/2TS 고추기름 1TS 멸치육수 1TS 간장 1ts 청주 1ts 참기름 1/2ts"
-                android:textSize="18sp" />
+                android:layout_height="70dp" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
-                android:layout_height="183dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/pork1" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
-                android:layout_height="132dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:text="1. 돼지고기(안심)은 먹기좋게 썰어 밑간양념을 넣고 30분정도 미리 재워두세요. 저는 밑간양념을 해서 랩을 덮어 냉장고에 넣어두었어요. 야채들은 저렇게 썰어두심 되요."
+                android:text="1. 돼지고기(안심)은 먹기좋게 썰어 밑간양념을 넣고\n30분정도 미리 재워두세요.\n저는 밑간양념을 해서 랩을 덮어 냉장고에 넣어두었어요.\n야채들은 저렇게 썰어두심 되요.\n"
                 android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
-                android:layout_height="267dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/pork2" />
 
             <TextView
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
-                android:layout_height="87dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:text="2. 브로콜리는 한입크기로 잘라 끊는 물에 소금을 약간 넣고 데쳐주세요. 데친 후 찬물에 헹구어 물기를 빼주세요."
+                android:text="2. 브로콜리는 한입크기로 자르고\n끊는 물에 소금을 약간 넣고 데쳐주세요.\n데친 후 찬물에 헹구어 물기를 빼주세요.\n"
                 android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
                 android:layout_height="273dp"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/pork3" />
 
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="match_parent"
-                android:layout_height="191dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:text="3. 달구어진 프라이팬에 약간의 오일을 두른 뒤, 편썰어놓은 마늘을 넣어향을 내주세요. \n 미리 밑간을 해둔 돼지고기를 넣고 볶아주세요. \n돼지고기가 거의 반쯤 익었을 때, 브로콜리를 제외한 야채들을 넣고 볶아주세요. \n돼지고기랑 야채들이 거의 다 익었을때쯤 볶음양념과 브로콜리를 넣고 맛나게 살짝이 더 볶아주세요."
+                android:text="3. 달구어진 프라이팬에 약간의 오일을 두른 뒤,\n편썰어놓은 마늘을 넣어향을 내주세요. \n 미리 밑간을 해둔 돼지고기를 넣고 볶아주세요. \n\n4.돼지고기가 거의 반쯤 익었을 때,\n브로콜리를 제외한 야채들을 넣고 볶아주세요. \n돼지고기랑 야채들이 거의 다 익었을때쯤 볶음양념과 브로콜리를 넣고 맛나게 살짝이 더 볶아주세요.\n"
                 android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="match_parent"
                 android:layout_height="277dp"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/pork4" />
 
             <TextView
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:text="4. 이렇게 접시에 담고 위에다는 통깨랑 검은깨를 뿌려주었어요."
+                android:text="5. 이렇게 접시에 담고\n마무리로 통깨랑 검은깨를 뿌려주었어요.\n\n"
                 android:textSize="18sp" />
 
             <EditText
@@ -98,10 +112,33 @@
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
-                android:layout_height="75dp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="볶음에 들어갈 야채들은 각 가정의 냉장고속에 있는 야채들로 하시면되요. 볶음양념은 미리 만들어두세요."
+                android:text="볶음에 들어갈 야채들은\n각 가정의 냉장고속에 있는 야채들로 하시면되요.\n볶음양념은 미리 만들어두는게 편합니다! \n\n\n"
                 android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="※별점 매기기"
+                android:textColor="#FF80AB"
+                android:textSize="26sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="false"
+                android:numStars="6"
+                android:rating="0"
+                android:stepSize="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </LinearLayout>
     </ScrollView>

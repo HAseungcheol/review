@@ -30,7 +30,7 @@ public class MemoActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int id) {
                         Toast.makeText(getApplicationContext(), "등록 완료!", Toast.LENGTH_SHORT).show();
                         save_values();
-                        Intent intent = new Intent(getApplicationContext(), WasabiActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
                         finish();
                     }
