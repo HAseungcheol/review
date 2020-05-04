@@ -14,6 +14,7 @@
         <activity android:name=".TunaActivity"></activity>
         <activity android:name=".EggActivity"></activity>
         <activity android:name=".PorkActivity"></activity>
+        <activity android:name=".ReviewActivity"></activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".StartActivity">
             <intent-filter>

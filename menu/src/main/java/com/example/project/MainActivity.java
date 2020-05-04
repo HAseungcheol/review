@@ -7,14 +7,13 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    List<Drawable> temp;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +51,15 @@ public void onClick(View v) {
         Intent intent = new Intent(MainActivity.this, PorkActivity.class);
         startActivity(intent);
         }
+        });
+        //평가 레이아웃으로 창 전환
+        Button review = findViewById(R.id.intentReview);
+        review.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ReviewActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }
