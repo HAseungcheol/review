@@ -9,13 +9,16 @@
         android:roundIcon="@drawable/cook_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MemoActivity"></activity>
-        <activity android:name=".WasabiActivity"></activity>
-        <activity android:name=".TunaActivity"></activity>
-        <activity android:name=".EggActivity"></activity>
-        <activity android:name=".PorkActivity"></activity>
-        <activity android:name=".ReviewActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".LastActivity"></activity>
+        <activity android:name=".MemoActivity" />
+        <activity android:name=".WasabiActivity" />
+        <activity android:name=".TunaActivity" />
+        <activity android:name=".EggActivity" />
+        <activity android:name=".PorkActivity" />
+        <activity android:name=".ReviewActivity" />
+        <activity android:name=".CreateQR" />
+        <activity android:name=".QRActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
