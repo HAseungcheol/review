@@ -21,6 +21,7 @@ public class QRActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(QRActivity.this, CreateQR.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
