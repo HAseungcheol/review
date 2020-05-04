@@ -61,5 +61,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button last = findViewById(R.id.QRcode);
+        last.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LastActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -5,25 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="637dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"><![CDATA[
-
-
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            ]]>
+            android:orientation="vertical">
 
             <ImageView
 
@@ -32,14 +23,6 @@
                 android:layout_height="142dp"
                 android:gravity="center"
                 app:srcCompat="@drawable/rice" />
-            android:id="@+id/wasabi"
-            android:layout_width="match_parent"
-            android:layout_height="165dp"
-            app:srcCompat="@drawable/rice" />
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/tuna"
@@ -78,11 +61,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:text="끝으로..." />
 
 </LinearLayout>

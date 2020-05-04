@@ -16,10 +16,12 @@
         <activity android:name=".PorkActivity"></activity>
         <activity android:name=".ReviewActivity"></activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".QRActivity"></activity>
+        <activity android:name=".CreateQR"></activity>
+        <activity android:name=".LastActivity"></activity>
         <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
