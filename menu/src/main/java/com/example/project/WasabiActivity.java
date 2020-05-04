@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RatingBar;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,5 +40,18 @@ public class WasabiActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
+//        Button saveStar = findViewById(R.id.saveRating);
+//        saveStar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                RatingBar ratingBar = findViewById(R.id.wasabiRating);
+//                ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+//                    @Override
+//                    public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) { ratingBar.setRating(v.get;
+//                        ratingBar.setIsIndicator(true);
+//                    }
+//                });
+//            }
+//        });
     }
 }
