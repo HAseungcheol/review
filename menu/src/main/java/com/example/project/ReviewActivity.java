@@ -102,9 +102,11 @@ public class ReviewActivity extends AppCompatActivity {
                         android.R.layout.simple_list_item_2,                 // View
                         new String[]{"title", "time"},
                         new int[]{android.R.id.text1, android.R.id.text2});
+        simpleAdapter.notifyDataSetChanged();
         //ListView에 adapter 연결
         listView = findViewById(R.id.reviewList);
         listView.setAdapter(simpleAdapter);
+
     }
 
     private SQLiteDatabase init_database() {

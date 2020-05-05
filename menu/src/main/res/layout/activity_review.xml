@@ -25,7 +25,7 @@
                     <ListView
                         android:id="@+id/reviewList"
                         android:layout_width="match_parent"
-                        android:layout_height="500dp" />
+                        android:layout_height="535dp" />
                 </LinearLayout>
             </ScrollView>
 
@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill"
-                android:text="등록"
+                android:text="평가 작성"
                 android:textColorHighlight="#EA80FC"
                 android:textColorLink="#FFFFFF"
                 android:textSize="18sp" />

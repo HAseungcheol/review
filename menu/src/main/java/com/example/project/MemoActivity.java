@@ -12,26 +12,27 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MemoActivity extends AppCompatActivity {
-    Button save;
-    Button delete;
-
+    EditText input;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_memo);
+
+        final Button save;
+        final Button delete;
 
         save = findViewById(R.id.btnSave);
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
-                builder.setTitle("저장하실 건가요?").setMessage("아직 실력이 부족해서 삭제 기능을 못 구현하였습니다.. ㅠ");
+                builder.setTitle("저장하실 건가요?").setMessage("등록 후, 리뷰화면으로 이동합니다.");
                 builder.setPositiveButton("등록", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         Toast.makeText(getApplicationContext(), "등록 완료!", Toast.LENGTH_SHORT).show();
                         save_values();
-                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), ReviewActivity.class);
                         startActivity(intent);
                         finish();
                     }
@@ -39,7 +40,7 @@ public class MemoActivity extends AppCompatActivity {
                 builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        Toast.makeText(getApplicationContext(), "한 번 더 확인해 주셔서 감사합니다!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "등록 취소!", Toast.LENGTH_SHORT).show();
                     }
                 });
                 AlertDialog alertDialog = builder.create();
@@ -50,7 +51,29 @@ public class MemoActivity extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "미구현 ㅠㅠ....", Toast.LENGTH_SHORT).show();
+                AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
+                input = new EditText(builder.getContext());
+                builder.setTitle("몇 번 게시물을 삭제하실 건가요?");
+                builder.setMessage("숫자만 입력해주세요!");
+                builder.setView(input);
+                builder.setPositiveButton("삭제", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        Toast.makeText(getApplicationContext(), "삭제 완료!", Toast.LENGTH_SHORT).show();
+                        delete_value();
+                        Intent intent = new Intent(getApplicationContext(), ReviewActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+                builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        Toast.makeText(getApplicationContext(), "삭제 취소!", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
             }
         });
     }
@@ -68,7 +91,8 @@ public class MemoActivity extends AppCompatActivity {
     }
 
     private void delete_value() {
-
+        String $id = input.getText().toString();
+        new MemoDAO().delete(getApplicationContext(), $id);
     }
 }
 
