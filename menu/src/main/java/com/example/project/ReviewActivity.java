@@ -37,6 +37,7 @@ public class ReviewActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MemoActivity.class);
                 startActivity(intent);
+
             }
         });
 
@@ -89,6 +90,7 @@ public class ReviewActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
+
     }
 
     private void load_values() {
